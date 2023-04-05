@@ -456,7 +456,7 @@ header nav ul li a:hover {
 }
 .mainGaleria .contenedorGaleria img {
   padding: 10px;
-  width: 100%;
+  width: 80%;
   height: 20rem;
   -o-object-fit: cover;
      object-fit: cover;
