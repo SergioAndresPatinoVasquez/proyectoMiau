@@ -1,6 +1,6 @@
 .section {
 
-    @include background($cafe-claro);
+    @include background($verde-claro); //$cafe-claro
 
     .wrapper {
         margin: 1rem;
