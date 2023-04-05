@@ -20,7 +20,6 @@ footer{
 
     .footer_text_uno{
         grid-area: footerUno;
-
         .text_footer{
             @include hover($verde-intermedio);
         }
@@ -29,7 +28,6 @@ footer{
     
     .footer_text_dos{
         grid-area: footerDos;
-
         .text_footer{
             @include hover($verde-intermedio);
         }
@@ -38,9 +36,6 @@ footer{
     .footer_icon{
         grid-area: footerIcon;
     }
-
-   
-
 }
 
 
