@@ -1,0 +1,112 @@
+@media (min-width: $tablet) {
+
+    header {
+        position: static;
+    }
+
+    .quienesSomos {
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            "textoUno textoDos"
+            "textoTres textoCuatro";
+    }
+
+    .adopciones {
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(7, auto);
+        grid-template-areas:
+            "tituloAdopciones tituloAdopciones"
+            "adopcionesUno adopcionesDos"
+            "adopcionesTres adopcionesCuatro"
+            "adopcionesCinco adopcionesSeis"
+            "adopcionesSiete adopcionesOcho"
+            "adopcionesNueve adopcionesDiez"
+            "adopcionesOnce adopcionesDoce";
+    }
+}
+
+
+
+
+
+
+@media (min-width: $laptop) {
+
+    header {
+        position: static;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-template-areas:
+            "logo nav nav"
+            "banner banner banner";
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            grid-area: logo;
+            width: 40px;
+            height: auto;
+            justify-content: start;
+        }
+
+        nav {
+            grid-area: nav;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                padding-right: 20px;
+            }
+        }
+
+        .banner {
+            grid-area: banner;
+            height: 100%;
+        }
+
+    }
+
+    .footer {
+
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: repeat(1, auto);
+        grid-template-areas:
+            "footerUno footerIcon footerDos";
+
+    }
+
+    .adopciones {
+
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(7, auto);
+        grid-template-areas:
+            "tituloAdopciones tituloAdopciones tituloAdopciones"
+            "adopcionesUno adopcionesDos adopcionesTres"
+            "adopcionesCuatro adopcionesCinco adopcionesSeis"
+            "adopcionesSiete adopcionesOcho adopcionesNueve"
+            "adopcionesDiez adopcionesOnce adopcionesDoce"
+        ;
+    }
+
+
+}
+
+
+
+@media (min-width: $desktop) {
+
+    .quienesSomos {
+
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(1, auto);
+        grid-template-areas:
+            "textoUno textoDos textoTres textoCuatro";
+
+    }
+
+}
+

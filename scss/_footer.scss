@@ -1,0 +1,46 @@
+footer{
+    @include background($amarillo-oscuro);
+    margin-bottom: 0;
+    margin-top:0;
+}
+
+
+.footer{
+    font-weight: bolder;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto); 
+    grid-template-areas:
+    "footerUno"    
+    "footerDos"
+    "footerIcon";
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+
+    .footer_text_uno{
+        grid-area: footerUno;
+
+        .text_footer{
+            @include hover($verde-intermedio);
+        }
+
+    }
+    
+    .footer_text_dos{
+        grid-area: footerDos;
+
+        .text_footer{
+            @include hover($verde-intermedio);
+        }
+    }
+    
+    .footer_icon{
+        grid-area: footerIcon;
+    }
+
+   
+
+}
+
+

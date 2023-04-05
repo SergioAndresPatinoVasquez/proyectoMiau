@@ -1,0 +1,52 @@
+.blog {
+
+    @include background($verde-intermedio);
+
+
+    h1 {
+        @include hover($verde-claro);
+        font-size: 3.5rem;
+    }
+
+
+    .card {
+        img {
+            height: 25rem;
+            object-fit: cover;
+        }
+
+        .card-body {
+            @include background($verde-claro);
+
+            .card-title {
+
+                h2 {
+
+                    font-size: 2.5rem;
+                    text-transform: capitalize;
+                    @include hover($verde-intermedio);
+
+                }
+            }
+
+            .card-text {
+                p {
+                    font-size: 1.9rem;
+                    text-align: justify;
+
+                }
+            }
+
+            .btn-outline-primary {
+                @include background($amarillo-oscuro);
+                color: $verde-intermedio;
+                border-color: $verde-intermedio;
+
+            }
+
+
+        }
+    }
+
+
+}

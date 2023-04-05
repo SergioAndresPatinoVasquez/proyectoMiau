@@ -1,0 +1,20 @@
+$negro-letra:#000000;
+$cafe-claro:#AFAB99;
+$verde-intermedio:#659B91;
+$amarillo-oscuro:#FFF26B;
+$verde-claro:#C3FCF1;
+$tablet:501px;
+$laptop:769px;
+$desktop:980px;
+
+@mixin background ($color) {
+    background-color: $color;
+}
+
+@mixin hover ($color) {
+    &:hover {
+        color: $color;
+
+    }
+}
+

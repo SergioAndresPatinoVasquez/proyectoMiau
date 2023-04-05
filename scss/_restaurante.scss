@@ -1,0 +1,106 @@
+.section {
+
+    @include background($cafe-claro);
+
+    .wrapper {
+        margin: 1rem;
+        margin-top: 0;
+        margin-bottom: 0;
+
+    }
+
+    .title {
+        text-align: center;
+        padding-top: 1.5rem;
+        margin-bottom: 6rem;
+
+        @include hover($amarillo-oscuro);
+
+        h2 {
+            text-transform: capitalize;
+            font-size: 3.6rem;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 1rem;
+
+            span {
+                display: block;
+                font-size: 1.8rem;
+                margin-bottom: -1rem;
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 12rem;
+                height: 0.2rem;
+                background-color: $verde-claro;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+
+            }
+        }
+
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+
+
+        .single-menu {
+
+            flex-basis: 40rem;
+            margin-bottom: 4rem;
+            padding: 4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+
+
+            img {
+                align-items: center;
+                max-width: 20rem;
+                border-radius: 50%;
+                padding: 0.3rem;
+                transition: 0.7s;
+
+                &:hover {
+                    border-radius: 0;
+                }
+            }
+
+            h2 {
+                text-align: center;
+                text-transform: capitalize;
+                font-size: 2.2rem;
+                border-bottom: 0.1rem solid $verde-claro;
+                margin-bottom: 0.5rem;
+                padding-bottom: 0.5px;
+
+                @include hover($amarillo-oscuro);
+
+                span {
+                    color: $negro-letra;
+                    @include hover($amarillo-oscuro);
+                }
+
+            }
+
+            p {
+                text-align: justify;
+                font-size: 1.7rem;
+                @include hover($amarillo-oscuro);
+
+            }
+
+        }
+    }
+
+
+}
