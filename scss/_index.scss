@@ -60,10 +60,11 @@
     background-color: $cafe-claro;
     justify-content: center;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
     grid-template-areas:
         "tituloMiau"
-        "textoMiau"
+        "textoMiauUno"
+        "textoMiauDos"
         "imgMiau";
 
 
@@ -72,8 +73,12 @@
         @include hover($verde-intermedio);
     }
 
-    .textoMiau {
-        grid-area: textoMiau;
+    .textoMiauUno {
+        grid-area: textoMiauUno;
+    }
+
+    .textoMiauDos {
+        grid-area: textoMiauDos;
     }
 
     .imgMiau {
@@ -81,7 +86,7 @@
 
     }
 
-    p {
+    p{
         font-size: 2rem;
         margin: 1.5rem;
         text-align: justify;

@@ -8,6 +8,7 @@
     <meta name="keywords" content="Fundación, Gatos, Animales, Felino, Medellín, Adopción, Restaurante, comida">
     <meta name="description" content="Visita nuestra fundación de gatos en Medellín Provenza, puedes adoptar con nosotros o disfrutar
     de una tarde en nuestras instalaciones.">
+    
     <link rel="stylesheet" href="./Style/scss.css">
     <link rel="icon" href="./images/mision.png">
     <title>Miau La Fundación Felina | Medellín Provenza</title>
@@ -17,32 +18,51 @@
 <body>
 
     <header>
-        <div class="logo">
-            <img src="./images/icon.png" alt="Es el icono de la página web">
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="./index.html">La Fundación</a>
-                </li>
-                <li>
-                    <a href="./pages/adopciones.html">Adopciones</a>
-                </li>
-                <li>
-                    <a href="./pages/restaurante.html">Restaurante</a>
-                </li>
-                <li>
-                    <a href="./pages/blog.html">Blog</a>
-                </li>
-                <li>
-                    <a href="./pages/galeria.html">Galería</a>
-                </li>
-            </ul>
+
+        <nav class="nav">
+
+            <div class="nav_container">
+
+                <div class="nav_mobile">
+                    <img class="logo" src="./images/icon.png" alt="Es el icono de la página web">
+
+                    <label for="menu" class="nav_label">
+                        <img src="./images/menu.png" class="nav_img" alt="menú hamburguesa desplegable">
+                    </label>
+                </div>
+                <input type="checkbox" id="menu" class="nav_input">
+
+                <div class="nav_menu">
+                    <ul>
+                        <li>
+                            <img src="./images/mision.png" alt="">
+                            <a href="./index.html" class="nav_item">La Fundación</a>
+
+                        </li>
+                        <li>
+                            <img src="./images/vision.png" alt="">
+                            <a href="./pages/adopciones.html" class="nav_item">Adopciones</a>
+                        </li>
+                        <li>
+                            <img src="./images/iconrest.png" alt="">
+                            <a href="./pages/restaurante.html" class="nav_item">Restaurante</a>
+                        </li>
+                        <li>
+                            <img src="./images/iconblog.png" alt="">
+                            <a href="./pages/blog.html" class="nav_item">Blog</a>
+                        </li>
+                        <li>
+                            <img src="./images/icongal.png" alt="">
+                            <a href="./pages/galeria.html" class="nav_item">Galería</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
-        <div class="banner">
-            <img src="./images/bannerFundacion.jpg" alt="Muestra el banner de la página web, un gato con un florero">
-        <div>
+
+        <img src="./images/bannerFundacion.jpg" alt="Muestra el banner de la página web, un gato con un florero">
+
 
     </header>
 
@@ -94,37 +114,30 @@
 
             <h2 class="tituloMiau">¿Qué es Miau?</h2>
 
-            <div>
+            
 
-                <p class="textoMiau">
+                <p class="textoMiauUno">
                     Es una Fundación por el Respeto y el Cuidado de los animales, es la materialización de la voluntad
-                    de
-                    varias personas que se unieron en pos de ayudar de manera solidaria, a los animales de calle,
-                    víctimas
-                    de violencia, abandono y maltrato de la Ciudad de Medellín, Área Metropolitana y
+                    de varias personas que se unieron en pos de ayudar de manera solidaria, a los animales de calle,
+                    víctimas de violencia, abandono y maltrato de la Ciudad de Medellín, Área Metropolitana y
                     alrededores.<br><br>
 
                     La intención con su formación fue generar una movilización de conciencias, que despertara en la
-                    sociedad
-                    una nueva cultura, basada en el respeto y la solidaridad, donde cada quien aporte lo que se
-                    encuentre al
-                    alcance de sus manos, en aras de brindar una nueva oportunidad de vida a los animales rescatados de
-                    las
-                    calles.<br><br>
-
+                    sociedad una nueva cultura, basada en el respeto y la solidaridad, donde cada quien aporte lo que se
+                    encuentre al alcance de sus manos, en aras de brindar una nueva oportunidad de vida a los animales rescatados de
+                    las calles.<br><br>
+                </p>
+                <p class="textoMiauDos">
                     Contamos con el interés de un grupo interdisciplinario de personas que brindan su mayor esfuerzo,
-                    por
-                    cambiar la realidad de un animal, que ha estado en las calles. Entre todos, apadrinamos, buscamos
+                    por cambiar la realidad de un animal, que ha estado en las calles. Entre todos, apadrinamos, buscamos
                     recursos para cancelar las atenciones veterinarias, desparasitamos y esterilizamos; para luego
-                    buscar un
-                    buen hogar, donde pueda reiniciar una vida tranquila al lado de una familia.<br><br>
+                    buscar un buen hogar, donde pueda reiniciar una vida tranquila al lado de una familia.<br><br>
 
                     Dicha labor la hacemos gracias a la red que integran voluntarios, pero en ningún momento representa
-                    una
-                    retribución económica. De igual forma, los animales que son atendidos por nuestra institución, son
+                    una retribución económica. De igual forma, los animales que son atendidos por nuestra institución, son
                     básicamente gatos de calle, que no tienen doliente, ni personas que los acompañan.<br>
                 </p>
-            </div>
+            
 
             <div class="imgMiau">
                 <figure>
@@ -240,7 +253,8 @@
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer">    
+
         <div class="footer_text_uno">
             <p class="text_footer">Sergio Andrés Patiño Vásquez</p>
             <p class="text_footer">Aplican Términos y condiciones</p>
@@ -261,6 +275,7 @@
                     alt="Es un icono que nos lleva a nuestra red social de twitter"></a>
         </div>
     </footer>
+
 </body>
 
 </html>

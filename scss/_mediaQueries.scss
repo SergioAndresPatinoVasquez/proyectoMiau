@@ -1,9 +1,5 @@
 @media (min-width: $tablet) {
 
-    header {
-        position: static;
-    }
-
     .quienesSomos {
 
         grid-template-columns: 1fr 1fr;
@@ -11,6 +7,17 @@
         grid-template-areas:
             "textoUno textoDos"
             "textoTres textoCuatro";
+    }
+
+    .miau {
+        
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            "tituloMiau tituloMiau"
+            "textoMiauUno textoMiauDos"
+            "textoMiauUno textoMiauDos"
+            "imgMiau imgMiau";
     }
 
     .adopciones {
@@ -36,38 +43,85 @@
 @media (min-width: $laptop) {
 
     header {
-        position: static;
-        margin: 0;
-        display: grid;
-        grid-template-columns: 1fr 2fr 2fr;
-        grid-template-areas:
-            "logo nav nav"
-            "banner banner banner";
-        justify-content: space-between;
-        align-items: center;
 
-        .logo {
-            grid-area: logo;
-            width: 40px;
-            height: auto;
-            justify-content: start;
-        }
-
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+    
         nav {
-            grid-area: nav;
+            @include background($amarillo-oscuro);
 
-            ul {
+            .nav_container {
+
                 display: flex;
                 justify-content: space-between;
-                padding-right: 20px;
+                align-items: center;
+    
+                .nav_mobile {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+    
+                    .logo {
+                        width: 15rem;
+                    }
+    
+                    .nav_label {
+                        display: none;
+                        //cursor: pointer;
+    
+                    }
+    
+                }
+    
+                .nav_input {
+                    display: none;
+                }
+    
+                .nav_menu {
+    
+                    ul {
+                        position: static;
+                        background-color: $amarillo-oscuro;
+                        display: flex;
+                        justify-content: end;
+                        flex-direction: row;
+                        align-items: center;
+                        transition: all 0s;
+    
+    
+                        li {
+                            list-style-type: none;
+                            display: flex;
+                            align-items: center;
+    
+                            img{
+                                display: none;
+                            }
+    
+                            a {
+                                color: $negro-letra;
+                                text-decoration: none;
+                                padding: 2rem;
+                                
+                            }
+                            
+                        }
+                    }
+    
+                }
+
             }
+    
         }
-
-        .banner {
-            grid-area: banner;
-            height: 100%;
+    
+        img {
+            width: 100%;   
+    
         }
-
+    
+    
+    
     }
 
     .footer {
@@ -94,7 +148,6 @@
 
 
 }
-
 
 
 @media (min-width: $desktop) {
