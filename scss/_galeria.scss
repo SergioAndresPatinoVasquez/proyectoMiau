@@ -2,12 +2,12 @@
 
     @include background($verde-claro);
 
-    h1{
+    h1 {
         @include hover($verde-intermedio);
     }
 
     .contenedorGaleria {
-        
+
         display: grid;
         gap: 0.5rem;
         grid-auto-rows: 20rem;
@@ -23,7 +23,7 @@
             transition: 0.5s;
             opacity: 0.8;
 
-            &:hover{
+            &:hover {
                 transform: scale(1.2);
                 opacity: 1;
             }
@@ -32,6 +32,3 @@
 
 
 }
-
-
-

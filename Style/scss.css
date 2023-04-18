@@ -357,6 +357,23 @@ header img {
 .adopciones p:hover {
   color: #659B91;
 }
+.adopciones .adoptar {
+  margin-bottom: 1rem;
+}
+.adopciones .adoptar .adopciones_Nombre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 2rem 0 2rem;
+}
+.adopciones .adoptar .adopciones_Nombre img {
+  width: 2.5rem;
+}
+.adopciones .adoptar .adopciones_Nombre h2 {
+  font-size: 1.6rem;
+  font-weight: 100;
+}
 
 .section {
   background-color: #C3FCF1;
@@ -370,9 +387,6 @@ header img {
   text-align: center;
   padding-top: 1.5rem;
   margin-bottom: 6rem;
-}
-.section .title:hover {
-  color: #FFF26B;
 }
 .section .title h2 {
   text-transform: capitalize;
@@ -428,21 +442,12 @@ header img {
   margin-bottom: 0.5rem;
   padding-bottom: 0.5px;
 }
-.section .menu .single-menu h2:hover {
-  color: #FFF26B;
-}
 .section .menu .single-menu h2 span {
   color: #000000;
-}
-.section .menu .single-menu h2 span:hover {
-  color: #FFF26B;
 }
 .section .menu .single-menu p {
   text-align: justify;
   font-size: 1.7rem;
-}
-.section .menu .single-menu p:hover {
-  color: #FFF26B;
 }
 
 .blog {

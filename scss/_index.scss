@@ -86,7 +86,7 @@
 
     }
 
-    p{
+    p {
         font-size: 2rem;
         margin: 1.5rem;
         text-align: justify;
@@ -187,9 +187,9 @@
     h2 {
         font-size: 3rem;
         padding-top: 1rem;
-        
+
         @include hover($verde-claro);
-        
+
     }
 
     .container {
@@ -263,10 +263,3 @@
     }
 
 }
-
-
-
-
-
-
-
